@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "createDataset",
+  "version": "1.0",
+
+  "description": "Adds a browser action icon to the toolbar. Click the button Y or N. The active tabs append a line: url followed by | [1(Y)|0(N)] in a file descriptor dataset",
+  "icons": {
+    "48": "icons/pallina_di_natale.png"
+  },
+
+  "permissions": [
+    "activeTab", "tabs" , "http://localhost/index.php" 
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/crown.png",
+    "default_title": "createDataset",
+    "default_popup": "popup/y_or_n.html"
+  }
+}
