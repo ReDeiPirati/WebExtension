@@ -1,13 +1,4 @@
 <?php
-	/*
-	//$myfile = fopen("/home/pirate/mozillaWebExtension/newfile.txt", "w") or die("Unable to open file!");
-	$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-	$txt = "John Doe\n";
-	fwrite($myfile, $txt);
-	$txt = "Jane Doe\n";
-	fwrite($myfile, $txt);
-	fclose($myfile);
-	*/
 	//echo $_POST['s'];
 	// Path to file dataSet
 	$file = 'dataSet.txt';
