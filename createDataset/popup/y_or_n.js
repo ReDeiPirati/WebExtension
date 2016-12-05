@@ -38,6 +38,12 @@ function appendInDataset(choice){
   }
 }
 
+
+$.get("http://localhost/index.php")
+  .done(function( data ) {
+    $("#lastline").text(data);
+  });
+
 /*
 Listen for clicks in the popup.
 
