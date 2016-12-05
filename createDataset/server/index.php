@@ -7,9 +7,8 @@
 		// Execute tail -n 1 dataSet.txt(return last row)
 		$line = `tail -n 1 $file`;
 		$tot =`wc -l $file | cut -d " " -f1`;
-		# At the beginning(pos and neg are equals cause there is no check over existence)
-		$pos = `cat $file | rev | sort -nr | cut -d " " -f1 | uniq -c  | rev | head -n1 | cut -d " " -f2`;
-		$neg = `cat $file | rev | sort -nr | cut -d " " -f1 | uniq -c  | rev | tail -n1 | cut -d " " -f2`;
+		$pos = `cat $file | rev | sort -nr | cut -d " " -f1 | uniq -c  | rev | cut -d " " -f2 | rev | head -n1 `;
+		$neg = `cat $file | rev | sort -nr | cut -d " " -f1 | uniq -c  | rev | cut -d " " -f2 | rev | tail -n1`;
 
 		echo "Last line:\n". $line ."\nPositive: " . $pos . "Negative: ". $neg . "Total Example: " . $tot;
 
